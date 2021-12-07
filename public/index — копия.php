@@ -1,0 +1,19 @@
+<?php
+include __DIR__ . '/../functions.php';
+
+// массив входных возможных данных
+$routes = [ "/" => '/main/homepage.php',
+			"/home" => '/main/homepage.php',
+			"/homepage" => '/main/homepage.php',
+			"/about" => '/main/about.php'];
+
+// путь из адресной строки
+$route = $_SERVER['REQUEST_URI'];
+
+if (array_key_exists($route, $routes)){
+	include __DIR__ . "/../" . $routes[$route]; 
+	exit;
+} else {
+	dd(404);
+}
+?>
