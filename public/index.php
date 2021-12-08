@@ -9,10 +9,10 @@ $redirect_to = $myRoute -> start();
 
 class Router {
 	// property declaration
-	private $routes = [ "/" => '/main/homepage.php', 
-						"/home" => '/main/homepage.php',
-						"/homepage" => '/main/homepage.php',
-						"/about" => '/main/about.php'];
+	private $routes = [ "/" => '/function/homepage.php',
+						"/home" => '/function/homepage.php',
+						"/homepage" => '/function/homepage.php',
+						"/about" => '/function/about.php'];
 	
 	private $route = $_SERVER['REQUEST_URI']; 
 	
@@ -32,4 +32,3 @@ class Router {
 			}
 	}
 }
-?>
