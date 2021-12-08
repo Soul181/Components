@@ -2,7 +2,7 @@
 
 class Router {
 	// property declaration
-	private $routes = [ "/" => '/main/homepage.php', 
+	private $routes = [ "/" => '/functions/homepage.php',
 			    "/home" => '/main/homepage.php',
 			    "/homepage" => '/main/homepage.php',
 		  	    "/about" => '/main/about.php'];

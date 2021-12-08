@@ -1,34 +1,19 @@
 <?php
-include 'router.php'; // получил экземпляр класса Router
+include __DIR__ . '/../functions.php';
 
-$myRoute = new Router();
+// массив входных возможных данных
+$routes = [ "/" => '/main/homepage.php',
+			"/home" => '/main/homepage.php',
+			"/homepage" => '/main/homepage.php',
+			"/about" => '/main/about.php'];
 
-$redirect_to = $myRoute -> start();
+// путь из адресной строки
+$route = $_SERVER['REQUEST_URI'];
 
-
-
-class Router {
-	// property declaration
-	private $routes = [ "/" => '/function/homepage.php',
-						"/home" => '/function/homepage.php',
-						"/homepage" => '/function/homepage.php',
-						"/about" => '/function/about.php'];
-	
-	private $route = $_SERVER['REQUEST_URI']; 
-	
-	// method declaration
-	public function __construct($router)
-	{
-		$this->router = $router;
-	}
-	
-	public function start ($routes, $route){
-		if (array_key_exists($route, $routes)){
-			include $routes[$route]; 
-			exit;
-		} else {
-			include "your_404_page.html";
-			exit;
-			}
-	}
+if (array_key_exists($route, $routes)){
+	include __DIR__ . "/../" . $routes[$route]; 
+	exit;
+} else {
+	dd(404);
 }
+?>
