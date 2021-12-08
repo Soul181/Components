@@ -3,15 +3,17 @@ $db = include __DIR__ . '/../database/start.php';
 
 
 spl_autoload_register(function ($class) {
-    var_dump($class); die;
-    include 'classes/' . $class . '.class.php';
+    require 'Classes/' . $class . '.php';
 });
 
+$class1 = new Class1();
+$class2 = new Class2();
+
+exit;
 
 
 
+//$posts = $db -> getAll('posts');
 
-$posts = $db -> getAll('posts');
-
-include __DIR__ . '/../index.view.php';
+//include __DIR__ . '/../index.view.php';
 ?>
