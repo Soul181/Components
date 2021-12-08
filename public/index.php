@@ -2,10 +2,10 @@
 include __DIR__ . '/../functions.php';
 
 // массив входных возможных данных
-$routes = [ "/" => '/main/homepage.php',
-			"/home" => '/main/homepage.php',
-			"/homepage" => '/main/homepage.php',
-			"/about" => '/main/about.php'];
+$routes = [ "/" => '/functions/homepage.php',
+			"/home" => '/functions/homepage.php',
+			"/homepage" => '/functions/homepage.php',
+			"/about" => '/functions/about.php'];
 
 // путь из адресной строки
 $route = $_SERVER['REQUEST_URI'];
