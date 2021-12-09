@@ -1,5 +1,5 @@
 <?php
-include 'functions.php';
+include __DIR__ . '/../functions.php';
 
 // массив входных возможных данных
 $routes = [ "/" => '/functions/homepage.php',
@@ -9,9 +9,10 @@ $routes = [ "/" => '/functions/homepage.php',
 
 // путь из адресной строки
 $route = $_SERVER['REQUEST_URI'];
+//dd($routes[$route]);
 
 if (array_key_exists($route, $routes)){
-	include $routes[$route];
+	include __DIR__ . '/../' .  $routes[$route];
 	exit;
 } else {
 	dd(404);

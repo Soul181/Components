@@ -16,10 +16,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-				  <a class="nav-link" href="/main/homepage.php">MainPage</a>
+				  <a class="nav-link" href="/functions/homepage.php">MainPage</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="/main/about.php">About</a>
+				  <a class="nav-link" href="/functions/about.php">About</a>
 				</li>
 			  </ul>
 			</div>
@@ -28,7 +28,7 @@
 	<div class="container">	
 		<div class="row">
 			<div class="col-md-8 offset-md-2">	
-			<a href="create.php" class="btn btn-success">Add Post</a>
+			<a href="/create.php" class="btn btn-success">Add Post</a>
 				<table class="table">
 				  <thead>
 					<tr>
