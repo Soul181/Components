@@ -1,9 +1,0 @@
-
-RewriteRule ^(.+)?$ /public/$1
-
-Options +FollowSymLinks -Index
-RewriteEngine on
-
-RewriteCont %{REQUEST_FILENAME} !-d
-RewriteCont %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [L]
