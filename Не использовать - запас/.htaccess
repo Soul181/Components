@@ -1,3 +1,6 @@
+
+RewriteRule ^(.+)?$ /public/$1
+
 Options +FollowSymLinks -Index
 RewriteEngine on
 

@@ -6,7 +6,7 @@ $id = $_GET['id'];
 
 $db -> update('posts', $_POST, $id);
 
-redirect_to("/main/homepage.php");
+redirect_to("/functions/homepage.php");
 ?>
 
 

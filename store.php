@@ -6,7 +6,7 @@ $db -> create('posts', [
 	"title" => $_POST['title']
 ]);
 
-redirect_to("/main/homepage.php");
+redirect_to("/functions/homepage.php");
 ?>
 
 

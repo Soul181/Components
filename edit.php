@@ -24,10 +24,10 @@ $post = $db -> getOne('posts', $id);
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-				  <a class="nav-link" href="/main/homepage.php">MainPage</a>
+				  <a class="nav-link" href="/functions/homepage.php">MainPage</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="/main/about.php">About</a>
+				  <a class="nav-link" href="/functions/about.php">About</a>
 				</li>
 			  </ul>
 			</div>

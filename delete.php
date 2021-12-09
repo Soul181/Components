@@ -6,6 +6,6 @@ $id = $_GET['id'];
 
 $db -> delete('posts', $id);
 
-redirect_to("/main/homepage.php");
+redirect_to("/functions/homepage.php");
 ?>
 
